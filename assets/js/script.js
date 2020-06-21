@@ -1,11 +1,3 @@
-// Show current time
-var update  = function(){
-    var time = moment().format('MMMM Do YYYY, h:mm a');
-    var timeNowEl = document.getElementById("currentDay");
-    timeNowEl.textContent = time;
-}
-setInterval(update,1000);
-
 //load all tasks
 function loadTasks(){
     let nineAM = localStorage.getItem("9AM");
