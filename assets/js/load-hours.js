@@ -6,7 +6,7 @@ var update  = function(){
 }
 setInterval(update,1000);
 
-
+// set times to corresponding hour (24 hour format)
 var nineTime = moment().set("hour", 10);
 var tenTime = moment().set("hour", 11);
 var elevenTime = moment().set("hour", 12);
@@ -21,10 +21,10 @@ var fiveTime = moment().set("hour", 18);
 $(".description").addClass("present");
 
 // compare hours to current time change class
-if(moment().isAfter(nineTime)){
+if(moment().isAfter(nineTime)){ // if current time is after 9AM
     $(".nineAM").addClass("past").removeClass("present");
 
-}else if(moment().diff(nineTime, "hour") < 0) {
+}else if(moment().diff(nineTime, "hour") < 0) { // if current time is before 9AM
     $(".nineAM").addClass("future").removeClass("present");
 }
 
