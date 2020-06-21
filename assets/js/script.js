@@ -1,49 +1,66 @@
 //load all tasks
 function loadTasks(){
+    // 9AM 
     let nineAM = localStorage.getItem("9AM");
     if(!nineAM){
         $(".nineAM").val(nineAM);
     }
+    $(".nineAM").text(nineAM);
+
+    // 10AM
     let tenAM = localStorage.getItem("10AM");
     if(!tenAM){
         $(".tenAM").val(tenAM);
     }
+    $(".tenAM").text(tenAM);
+
+    // 11AM
     let elevenAM = localStorage.getItem("11AM");
     if(!elevenAM){
         $(".elevenAM").val(elevenAM);
     }
+    $(".elevenAM").text(elevenAM);
+
+    // 12PM
     let twelvePM = localStorage.getItem("12PM");
     if(!twelvePM){
         $(".twelvePM").val(twelvePM);
     }
+    $(".twelvePM").text(twelvePM);
+
+    // 1PM
     let onePM = localStorage.getItem("1PM");
     if(!onePM){
         $(".onePM").val(onePM);
     }
+    $(".onePM").text(onePM);
+
+    // 2PM
     let twoPM = localStorage.getItem("2PM");
     if(!twoPM){
         $(".tenAM").val(twoPM);
     }
+    $(".twoPM").text(twoPM);
+
+    // 3PM
     let threePM = localStorage.getItem("3PM");
     if(!threePM){
         $(".threePM").val(threePM);
     }
+    $(".threePM").text(threePM);
+
+    // 4PM
     let fourPM = localStorage.getItem("4PM");
     if(!fourPM){
         $(".fourPM").val(fourPM);
     }
+    $(".fourPM").text(fourPM);
+
+    // 5PM
     let fivePM = localStorage.getItem("5PM");
     if(!fivePM){
         $(".fivePM").val(fivePM);
     }
-    $(".nineAM").text(nineAM);
-    $(".tenAM").text(tenAM);
-    $(".elevenAM").text(elevenAM);
-    $(".twelvePM").text(twelvePM);
-    $(".onePM").text(onePM);
-    $(".twoPM").text(twoPM);
-    $(".threePM").text(threePM);
-    $(".fourPM").text(fourPM);
     $(".fivePM").text(fivePM);
 
 }

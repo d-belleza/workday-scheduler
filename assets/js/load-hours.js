@@ -17,19 +17,70 @@ var threeTime = moment().set("hour", 16);
 var fourTime = moment().set("hour", 17);
 var fiveTime = moment().set("hour", 18);
 
+// set all hours to present as default
+$(".description").addClass("present");
 
-// compare hours to current time
+// compare hours to current time change class
 if(moment().isAfter(nineTime)){
-    console.log("nine is in the past");
+    $(".nineAM").addClass("past").removeClass("present");
 
 }else if(moment().diff(nineTime, "hour") < 0) {
-    console.log("nine is in the future");
+    $(".nineAM").addClass("future").removeClass("present");
 }
 
-// hour is in the past
 if(moment().isAfter(tenTime)){
-    console.log("ten is in the past");
+    $(".tenAM").addClass("past").removeClass("present");
 
-}else if(moment().diff(tenTime, "hour") < 0){
-    console.log("ten is in the future");
+}else if(moment().diff(tenTime, "hour") < 0) {
+    $(".tenAM").addClass("future").removeClass("present");
 }
+
+if(moment().isAfter(elevenTime)){
+    $(".elevenAM").addClass("past").removeClass("present");
+
+}else if(moment().diff(elevenTime, "hour") < 0) {
+    $(".elevenAM").addClass("future").removeClass("present");
+}
+
+if(moment().isAfter(noon)){
+    $(".twelvePM").addClass("past").removeClass("present");
+
+}else if(moment().diff(noon, "hour") < 0) {
+    $(".twelvePM").addClass("future").removeClass("present");
+}
+
+if(moment().isAfter(oneTime)){
+    $(".onePM").addClass("past").removeClass("present");
+
+}else if(moment().diff(oneTime, "hour") < 0) {
+    $(".onePM").addClass("future").removeClass("present");
+}
+
+if(moment().isAfter(twoTime)){
+    $(".twoPM").addClass("past").removeClass("present");
+
+}else if(moment().diff(twoTime, "hour") < 0) {
+    $(".twoPM").addClass("future").removeClass("present");
+}
+
+if(moment().isAfter(threeTime)){
+    $(".threePM").addClass("past").removeClass("present");
+
+}else if(moment().diff(threeTime, "hour") < 0) {
+    $(".threePM").addClass("future").removeClass("present");
+}
+
+if(moment().isAfter(fourTime)){
+    $(".fourPM").addClass("past").removeClass("present");
+
+}else if(moment().diff(fourTime, "hour") < 0) {
+    $(".fourPM").addClass("future").removeClass("present");
+}
+
+if(moment().isAfter(fiveTime)){
+    $(".fivePM").addClass("past").removeClass("present");
+
+}else if(moment().diff(fiveTime, "hour") < 0) {
+    $(".fivePM").addClass("future").removeClass("present");
+}
+

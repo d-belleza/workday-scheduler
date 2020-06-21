@@ -57,16 +57,19 @@ textarea{
 .past {
   background-color: #d3d3d3;
   color: var(--black);
+  border-top: 1px solid white;
 }
 
 .present {
   background-color: var(--red);
   color: white;
+  border-top: 1px solid white;
 }
 
 .future {
   background-color: var(--green);
   color: white;
+  border-top: 1px solid white;
 }
 
 .saveBtn {
